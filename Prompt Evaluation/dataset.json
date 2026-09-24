@@ -1,0 +1,11 @@
+[
+  {
+    "task": "Write a Python function that parses an AWS S3 object key and extracts the bucket name, prefix, and file name from a full S3 URI like 's3://my-bucket/path/to/file.txt'"
+  },
+  {
+    "task": "Create a JSON object that represents an AWS IAM policy allowing a principal to perform GetObject and PutObject actions only on objects with a specific tag 'Environment=Production' in an S3 bucket"
+  },
+  {
+    "task": "Write a regular expression that validates and extracts AWS ARN components from strings like 'arn:aws:s3:::my-bucket/my-object' or 'arn:aws:iam::123456789012:role/MyRole'"
+  }
+]
