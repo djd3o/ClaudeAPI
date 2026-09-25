@@ -1,17 +1,17 @@
 [
   {
-    "task": "Create an AWS Lambda function configuration that sets up a function with 512MB memory, 30 second timeout, and includes environment variables for database connection string and API key",
+    "task": "Create a CloudFormation template configuration for an S3 bucket with versioning enabled and public access blocked",
     "format": "json",
-    "solution_criteria": "Must include FunctionName, Runtime, MemorySize (512), Timeout (30), Environment variables object with DB_CONNECTION_STRING and API_KEY keys, and Handler specification"
+    "solution_criteria": "Must include S3 bucket resource with VersioningConfiguration enabled, PublicAccessBlockConfiguration with all block settings set to true, and proper AWS CloudFormation syntax"
   },
   {
-    "task": "Write a Python function that takes an AWS S3 event from a Lambda trigger, extracts the bucket name and object key, and returns them as a dictionary",
+    "task": "Write a Python function that extracts the AWS region and service name from an ARN string",
     "format": "python",
-    "solution_criteria": "Must parse the S3 event structure, extract bucket name from Records[0]['s3']['bucket']['name'], extract key from Records[0]['s3']['object']['key'], handle URL decoding for the key, and return a dict with 'bucket' and 'key' keys"
+    "solution_criteria": "Function must parse ARN format (arn:aws:service:region:account-id:resource), handle edge cases, return a dictionary with 'region' and 'service' keys, and include basic error handling"
   },
   {
-    "task": "Create a regular expression that validates AWS IAM role ARN format (arn:aws:iam::123456789012:role/RoleName)",
+    "task": "Create a regular expression pattern that validates AWS IAM policy action strings in the format 'service:action' or 'service:*'",
     "format": "regex",
-    "solution_criteria": "Must match valid IAM role ARNs starting with 'arn:aws:iam::', followed by 12-digit account ID, ':role/', and a valid role name containing alphanumeric characters, hyphens, and forward slashes. Must reject invalid formats"
+    "solution_criteria": "Pattern must match valid service names (lowercase alphanumeric with hyphens), action names (alphanumeric with asterisks and hyphens), reject invalid characters, and support wildcard matching"
   }
 ]

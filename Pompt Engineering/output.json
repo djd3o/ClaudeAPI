@@ -1,0 +1,54 @@
+[
+  {
+    "output": "```json\n[\n  \"Carbon pricing mechanisms\",\n  \"Environmental economics\",\n  \"Climate policy\",\n  \"Carbon tax\",\n  \"Industrial emissions reduction\",\n  \"Government revenue\",\n  \"Forestry regulations\",\n  \"Agriculture regulations\",\n  \"Land-use change\",\n  \"Greenhouse gas emissions\",\n  \"Distributional impacts\",\n  \"Low-income households\",\n  \"Carbon dividends\",\n  \"Renewable energy adoption\",\n  \"Political feasibility\",\n  \"Climate targets\",\n  \"International climate agreements\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Carbon pricing mechanisms represent a critical intersection of environmental economics and climate policy. Recent studies demonstrate that implementing a carbon tax of $50-100 per metric ton CO2 equivalent can reduce industrial emissions by 15-25% while generating substantial government revenue. However, the effectiveness depends on complementary regulations in the forestry and agriculture sectors, where land-use change accounts for approximately 24% of global greenhouse gas emissions. Simultaneously, economists debate the distributional impacts on low-income households, suggesting that revenue-neutral carbon dividends or targeted subsidies for renewable energy adoption may be necessary to maintain political feasibility while achieving climate targets outlined in international agreements."
+      },
+      "solution_criteria": [
+        "Extracts topics spanning at least two distinct disciplines (economics, environmental science, policy)",
+        "Includes both domain-specific concepts (e.g., carbon pricing, emissions reduction, land-use change) and cross-cutting themes (e.g., policy implementation, distributional effects)",
+        "Returns output as a valid JSON array of strings with no additional formatting or explanations"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of string",
+      "scenario": "Testing with an interdisciplinary passage that deliberately spans multiple fields (e.g., economics + environmental science) to evaluate correct handling of cross-domain topics and boundary cases"
+    },
+    "score": 9,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no commentary, and each string contains only the topic itself. It meets all secondary criteria by extracting topics across economics, environmental science, and policy disciplines, including both domain-specific concepts (carbon pricing, land-use change, greenhouse gas emissions) and cross-cutting themes (distributional impacts, political feasibility, policy implementation). The extraction is thorough and well-balanced. Minor stylistic inconsistencies do not materially detract from the quality of the response."
+  },
+  {
+    "output": "```json\n[\n  \"Variational Quantum Eigensolvers\",\n  \"Quantum Approximate Optimization Algorithms\",\n  \"Schr\u00f6dinger equation\",\n  \"Parameterized ansatz\",\n  \"Two-qubit entangling gates\",\n  \"Single-qubit rotations\",\n  \"Gradient descent optimization\",\n  \"Hamiltonian decomposition\",\n  \"Pauli strings\",\n  \"NISQ devices\",\n  \"Exact diagonalization\",\n  \"Quantum fidelity\",\n  \"Error mitigation\",\n  \"Zero-noise extrapolation\",\n  \"Symmetry verification\",\n  \"Depolarizing noise\",\n  \"Circuit depth optimization\",\n  \"Two-qubit gate count\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "We present a novel approach for solving the Schr\u00f6dinger equation using variational quantum eigensolvers (VQE) combined with quantum approximate optimization algorithms (QAOA). Our methodology employs a parameterized ansatz |\u03c8(\u03b8)\u27e9 constructed from two-qubit entangling gates and single-qubit rotations, optimized via classical gradient descent. The Hamiltonian H = \u03a3\u1d62 \u03c3\u1d62\u1dbb + \u03a3\u27e8\u1d62\u2c7c\u27e9 J\u1d62\u2c7c\u03c3\u1d62\u02e3\u03c3\u2c7c\u02e3 is decomposed into Pauli strings, enabling efficient measurement on NISQ devices. We validate our results against exact diagonalization for systems up to 12 qubits, achieving 99.7% fidelity. Error mitigation techniques including zero-noise extrapolation and symmetry verification reduce depolarizing noise by 43%, while our circuit depth optimization reduces two-qubit gate count by 56% compared to baseline implementations."
+      },
+      "solution_criteria": [
+        "Extracts all domain-specific technical topics (e.g., variational quantum eigensolvers, QAOA, ansatz, Hamiltonian decomposition, Pauli strings, NISQ devices, error mitigation)",
+        "Includes methodology-related topics (e.g., gradient descent optimization, zero-noise extrapolation, circuit depth optimization)",
+        "Returns output as a JSON array of strings with no extraneous fields or explanations"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of string",
+      "scenario": "Testing with a highly technical STEM passage featuring domain-specific jargon, mathematical notation, and methodology descriptions to ensure precise identification of discipline-specific topics"
+    },
+    "score": 8,
+    "reasoning": "The solution meets all mandatory requirements: it provides a valid JSON array of strings containing topics from the article, with no commentary or extraneous fields. The extraction is thorough and captures the majority of domain-specific technical topics and methodologies. However, there are minor omissions and slight imprecisions in topic naming that prevent a perfect score. The solution demonstrates strong understanding of the content and appropriate topic extraction, with only minor refinements needed."
+  },
+  {
+    "output": "```json\n[\n  \"Hegel's dialectical method\",\n  \"Historical consciousness\",\n  \"Negation of contradictions\",\n  \"Marxist materialism\",\n  \"Poststructuralist critique\",\n  \"Teleological thinking\",\n  \"Enlightenment philosophy\",\n  \"Faith in reason\",\n  \"Romanticism\",\n  \"Limits of rationality\",\n  \"Human agency\",\n  \"Historical progress\",\n  \"Foucault's genealogical approach\",\n  \"Power relations\",\n  \"Knowledge construction\",\n  \"Discourse theory\",\n  \"Truth and objectivity\",\n  \"Kantian transcendentalism\",\n  \"Nietzschean perspectivism\",\n  \"Phenomenology\",\n  \"Subjectivity\",\n  \"Temporality\",\n  \"Meaning construction\",\n  \"Social institutions\",\n  \"Epistemology\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Hegel's dialectical method fundamentally transformed epistemological discourse by positing that historical consciousness emerges through the negation of contradictions, a framework that subsequently influenced Marxist materialism and poststructuralist critiques of teleological thinking. The Enlightenment's faith in reason confronted Romantic skepticism regarding the limits of rationality, yet both movements paradoxically shared an investment in human agency and historical progress. Foucault's genealogical approach later destabilized these assumptions by demonstrating how power relations constitute knowledge itself, challenging the assumption that truth exists independent of discourse. These competing philosophical traditions\u2014spanning from Kantian transcendentalism through Nietzschean perspectivism to contemporary phenomenology\u2014collectively interrogate the relationship between subjectivity, temporality, and the construction of meaning within social institutions."
+      },
+      "solution_criteria": [
+        "Extracts all major philosophical concepts and movements mentioned (e.g., dialectical method, Enlightenment, Romanticism, poststructuralism, genealogy, transcendentalism, perspectivism, phenomenology)",
+        "Identifies overlapping thematic concerns such as consciousness, reason, power, knowledge, and subjectivity that span multiple traditions",
+        "Returns output as a valid JSON array of strings with no duplicates",
+        "Captures nuanced, abstract topics without oversimplification or conflation of distinct concepts"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of string",
+      "scenario": "Testing with a humanities passage containing abstract philosophical concepts and historical references to verify accurate extraction of nuanced, overlapping topics"
+    },
+    "score": 8,
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings with no duplicates, contains only topic names without commentary, and returns only the JSON array. It meets most secondary criteria by identifying major philosophical concepts, movements, and overlapping thematic concerns. However, there are minor deficiencies in topic selection\u2014'Romanticism' should appear as an explicit entry given its prominence in the passage, and some topics are unnecessarily granular or redundant. The solution demonstrates strong comprehension but could be more refined in its topic boundaries and completeness."
+  }
+]

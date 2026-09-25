@@ -1,0 +1,39 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "Carbon pricing mechanisms represent a critical intersection of environmental economics and climate policy. Recent studies demonstrate that implementing a carbon tax of $50-100 per metric ton CO2 equivalent can reduce industrial emissions by 15-25% while generating substantial government revenue. However, the effectiveness depends on complementary regulations in the forestry and agriculture sectors, where land-use change accounts for approximately 24% of global greenhouse gas emissions. Simultaneously, economists debate the distributional impacts on low-income households, suggesting that revenue-neutral carbon dividends or targeted subsidies for renewable energy adoption may be necessary to maintain political feasibility while achieving climate targets outlined in international agreements."
+    },
+    "solution_criteria": [
+      "Extracts topics spanning at least two distinct disciplines (economics, environmental science, policy)",
+      "Includes both domain-specific concepts (e.g., carbon pricing, emissions reduction, land-use change) and cross-cutting themes (e.g., policy implementation, distributional effects)",
+      "Returns output as a valid JSON array of strings with no additional formatting or explanations"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of string",
+    "scenario": "Testing with an interdisciplinary passage that deliberately spans multiple fields (e.g., economics + environmental science) to evaluate correct handling of cross-domain topics and boundary cases"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Hegel's dialectical method fundamentally transformed epistemological discourse by positing that historical consciousness emerges through the negation of contradictions, a framework that subsequently influenced Marxist materialism and poststructuralist critiques of teleological thinking. The Enlightenment's faith in reason confronted Romantic skepticism regarding the limits of rationality, yet both movements paradoxically shared an investment in human agency and historical progress. Foucault's genealogical approach later destabilized these assumptions by demonstrating how power relations constitute knowledge itself, challenging the assumption that truth exists independent of discourse. These competing philosophical traditions\u2014spanning from Kantian transcendentalism through Nietzschean perspectivism to contemporary phenomenology\u2014collectively interrogate the relationship between subjectivity, temporality, and the construction of meaning within social institutions."
+    },
+    "solution_criteria": [
+      "Extracts all major philosophical concepts and movements mentioned (e.g., dialectical method, Enlightenment, Romanticism, poststructuralism, genealogy, transcendentalism, perspectivism, phenomenology)",
+      "Identifies overlapping thematic concerns such as consciousness, reason, power, knowledge, and subjectivity that span multiple traditions",
+      "Returns output as a valid JSON array of strings with no duplicates",
+      "Captures nuanced, abstract topics without oversimplification or conflation of distinct concepts"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of string",
+    "scenario": "Testing with a humanities passage containing abstract philosophical concepts and historical references to verify accurate extraction of nuanced, overlapping topics"
+  },
+  {
+    "prompt_inputs": {
+      "content": "We present a novel approach for solving the Schr\u00f6dinger equation using variational quantum eigensolvers (VQE) combined with quantum approximate optimization algorithms (QAOA). Our methodology employs a parameterized ansatz |\u03c8(\u03b8)\u27e9 constructed from two-qubit entangling gates and single-qubit rotations, optimized via classical gradient descent. The Hamiltonian H = \u03a3\u1d62 \u03c3\u1d62\u1dbb + \u03a3\u27e8\u1d62\u2c7c\u27e9 J\u1d62\u2c7c\u03c3\u1d62\u02e3\u03c3\u2c7c\u02e3 is decomposed into Pauli strings, enabling efficient measurement on NISQ devices. We validate our results against exact diagonalization for systems up to 12 qubits, achieving 99.7% fidelity. Error mitigation techniques including zero-noise extrapolation and symmetry verification reduce depolarizing noise by 43%, while our circuit depth optimization reduces two-qubit gate count by 56% compared to baseline implementations."
+    },
+    "solution_criteria": [
+      "Extracts all domain-specific technical topics (e.g., variational quantum eigensolvers, QAOA, ansatz, Hamiltonian decomposition, Pauli strings, NISQ devices, error mitigation)",
+      "Includes methodology-related topics (e.g., gradient descent optimization, zero-noise extrapolation, circuit depth optimization)",
+      "Returns output as a JSON array of strings with no extraneous fields or explanations"
+    ],
+    "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of string",
+    "scenario": "Testing with a highly technical STEM passage featuring domain-specific jargon, mathematical notation, and methodology descriptions to ensure precise identification of discipline-specific topics"
+  }
+]
