@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that parses an AWS S3 object key and extracts the bucket name, prefix, and file name from a full S3 URI like 's3://my-bucket/path/to/file.txt'"
+    "task": "Create an AWS Lambda function configuration that sets up a function with 512MB memory, 30 second timeout, and includes environment variables for database connection string and API key",
+    "format": "json",
+    "solution_criteria": "Must include FunctionName, Runtime, MemorySize (512), Timeout (30), Environment variables object with DB_CONNECTION_STRING and API_KEY keys, and Handler specification"
   },
   {
-    "task": "Create a JSON object that represents an AWS IAM policy allowing a principal to perform GetObject and PutObject actions only on objects with a specific tag 'Environment=Production' in an S3 bucket"
+    "task": "Write a Python function that takes an AWS S3 event from a Lambda trigger, extracts the bucket name and object key, and returns them as a dictionary",
+    "format": "python",
+    "solution_criteria": "Must parse the S3 event structure, extract bucket name from Records[0]['s3']['bucket']['name'], extract key from Records[0]['s3']['object']['key'], handle URL decoding for the key, and return a dict with 'bucket' and 'key' keys"
   },
   {
-    "task": "Write a regular expression that validates and extracts AWS ARN components from strings like 'arn:aws:s3:::my-bucket/my-object' or 'arn:aws:iam::123456789012:role/MyRole'"
+    "task": "Create a regular expression that validates AWS IAM role ARN format (arn:aws:iam::123456789012:role/RoleName)",
+    "format": "regex",
+    "solution_criteria": "Must match valid IAM role ARNs starting with 'arn:aws:iam::', followed by 12-digit account ID, ':role/', and a valid role name containing alphanumeric characters, hyphens, and forward slashes. Must reject invalid formats"
   }
 ]
